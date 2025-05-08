@@ -5,12 +5,11 @@ using Notes.Application.Interfaces;
 using Notes.Persistance;
 using Notes.Application;
 using Notes.Persistance;
+using Notes.Application.Notes.Queries.GetNoteList;
 
 var builder = WebApplication.CreateBuilder(args);
 
 IConfiguration configuration = builder.Configuration;
-
-var app = builder.Build();
 
 builder.Services.AddAutoMapper((IMapperConfigurationExpression config) =>
 {
@@ -18,8 +17,12 @@ builder.Services.AddAutoMapper((IMapperConfigurationExpression config) =>
     config.AddProfile(new AssemblyMappingProfile(typeof(INotesDbContext).Assembly));
 });
 
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(GetNoteListQuery).Assembly));
+
 builder.Services.AddApplication();
 builder.Services.AddPersistence(configuration);
+builder.Services.AddControllers();
 
 builder.Services.AddCors(option =>
 {
@@ -32,7 +35,7 @@ builder.Services.AddCors(option =>
         });
 });
 
-
+var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
