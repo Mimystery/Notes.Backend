@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{314ABC68-2D95-4B3A-B2A3-F90A79066CA5}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.Persistance", "Notes.Persistance\Notes.Persistance.csproj", "{665A3232-660E-4BA6-AF44-A20207C3829B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.WebApi", "Notes.WebApi\Notes.WebApi.csproj", "{6EE7F40F-52E0-4DD0-B440-E3FAA0BE2D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notes.Tests", "Notes.Tests\Notes.Tests.csproj", "{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{6EE7F40F-52E0-4DD0-B440-E3FAA0BE2D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EE7F40F-52E0-4DD0-B440-E3FAA0BE2D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EE7F40F-52E0-4DD0-B440-E3FAA0BE2D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +56,6 @@ Global
 		{AD053BB3-184C-4D0C-BA05-8903CE2C34EA} = {314ABC68-2D95-4B3A-B2A3-F90A79066CA5}
 		{665A3232-660E-4BA6-AF44-A20207C3829B} = {5915DCE8-BF82-47CA-B7A1-28D3C5B42ED9}
 		{6EE7F40F-52E0-4DD0-B440-E3FAA0BE2D53} = {4C2376B9-92B5-47A3-8423-B1E4D92E6AE9}
+		{60ABEA7B-9356-4238-BFC7-5ACAF8E47B2D} = {5F79619C-65E9-4526-91F5-4748990C8B6F}
 	EndGlobalSection
 EndGlobal
