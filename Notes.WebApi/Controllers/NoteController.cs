@@ -10,8 +10,10 @@ using Notes.WebApi.Models;
 
 namespace Notes.WebApi.Controllers
 {
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
     [Produces("application/json")]
-    [Route("api/[controller]")]
+    [Route("api/{version:apiVersion}/[controller]")]
     public class NoteController : BaseControler
     {
         private readonly IMapper _mapper;
@@ -131,7 +133,7 @@ namespace Notes.WebApi.Controllers
 
 
         /// <summary>
-        /// Delete note
+        /// Delete note 
         /// </summary>
         /// <remarks>
         ///Sample request:
